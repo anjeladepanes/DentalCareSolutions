@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>W3.CSS Template</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="website.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Georgia"}
+
+    body, html {
+      height: 100%;
+      line-height: 1.8;
+    }
+
+    /* Full height image header */
+    .bgimg-1 {
+      background-position: center;
+      background-size: cover;
+      background-image: url("OIP.jpg");
+      min-height: 100%;
+    }
+
+    .w3-bar .w3-button {
+      padding: 16px;
+    }
+    </style>
+  </head>
+<body>
+
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar w3-white w3-card" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-wide">A & C DENTAL CARE SOLUTIONS</a>
+    <!-- Right-sided navbar links -->
+    <div class="w3-right w3-hide-small">
+      <a href="#about" class="w3-bar-item w3-button">ABOUT US</a>
+      <a href="#team" class="w3-bar-item w3-button"><i class="fa fa-user"></i> OUR TEAM</a>
+      <a href="#work" class="w3-bar-item w3-button"><i class="fa fa-bars"></i> OUR BRANCHES</a>
+      <a href="#pricing" class="w3-bar-item w3-button"><i class="fa fa-money"></i> OUR SERVICES</a>
+      <a href="#contact" class="w3-bar-item w3-button"><i class="fa fa-envelope"></i> CONTACT US</a>
+    </div>
+    <!-- Hide right-floated links on small screens and replace them with a menu icon -->
+
+    <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
+      <i class="fa fa-bars"></i>
+    </a>
+  </div>
+</div>
+
+<!-- Sidebar on small screens when clicking the menu icon -->
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT US</a>
+  <a href="#team" onclick="w3_close()" class="w3-bar-item w3-button">OUR TEAM</a>
+  <a href="#pricing" onclick="w3_close()" class="w3-bar-item w3-button"> OUR SERVICES</a>
+  <a href="#contact" onclick="w3_close()" class="w3-bar-item w3-button">CONTACT US </a>
+</nav>
+
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-left w3-text-white" style="padding:48px">
+    <span class="w3-jumbo w3-hide-small">A & C DENTAL CARE SOLUTIONS </span><br>
+    <h4>Your Convenient, Accommodating, and Affordable Dental Care Partner.</h4>
+    <span class="w3-xxlarge w3-hide-large w3-hide-medium"></span><br>
+    <p><a href="#contact" class="w3-button w3-white w3-padding-large w3-large w3-margin-top w3-opacity w3-hover-opacity-off">Book an appointment </a></p>
+  </div> 
+  <div class="w3-display-bottomleft w3-text-grey w3-large" style="padding:24px 48px">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+</header>
+
+<!-- About Section -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <h3 class="w3-center">ABOUT THE CLINIC</h3>
+  <p class="w3-center w3-large">Key features of our dental clinic</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large"> World Class</p>
+      <p>Our dentists are specialized in different fields to address all your dental concerns and to make sure that you will be provided with unmatched care and safety. </p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large"> All Major Health Funds Accepted</p>
+      <p> A & C Dental Care Solutions is registered with all major health funds, so you can claim with your health insurance provider at the time of your appointment and have developed their own in house payments plan to cater for all levels of society.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large"> Where Quality Meets Affordability </p>
+      <p>Our aim is to look after your whole family’s oral health with experienced dentists, superior quality in our materials at a respectable price. </p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Where Beautiful Smiles Are Made.</p>
+      <p> A & C Dental Care Solutions is one of the best and most innovative dental clinics in the Philippines, offering quality and top-notch dental experience. This is where beautiful smiles are made.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Promo Section - "We know design" -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>We Love To Explore​</h3>
+      <p>A & C Dental Care Solutions is one of the best and most innovative dental clinics in the Philippines, offering quality and top-notch dental experience. This is where beautiful smiles are made.</p>
+      <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Works</a></p>
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large" src="teeth.jpg" alt="Buildings" width="700" height="394">
+    </div>
+  </div>
+</div>
+
+<!-- Team Section -->
+<div class="w3-container" style="padding: 50px" id="team">
+  <h3 class="w3-center">OUR TEAM</h3>
+  <p class="w3-center w3-large">The ones who runs this clinic</p>
+  <div class="w3-col l3 m6 w4-margin-bottom">
+    <div class="w3-card staff">
+      <img src="owner2.jpg" alt="Anjela Depanes" style="width:100%">
+      <div class="w3-container">
+        <h3 class="staff-name">Anjela Depanes</h3>
+        <p><button class="w3-button w3-light-grey w3-block"></i>FOUNDER</button></p>
+      </div>
+    </div>
+  </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card staff">
+        <img src="owner1.jpg" alt="Carissa Labayandoy" style="width:100%">
+        <div class="w3-container">
+          <h3 class="staff-name">Carissa Labayandoy</h3>
+          <p><button class="w3-button w3-light-grey w3-block"></i> CO-FOUNDER</button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card staff">
+        <img src="nurse2.jpg" alt="Dentist" style="width:100%">
+        <div class="w3-container">
+          <h3 class="staff-name">George Adamson </h3>
+          <p><button class="w3-button w3-light-grey w3-block"></i> HEAD DENTIST </button></p>
+        </div>
+      </div>
+    </div>
+    <div class="w3-col l3 m6 w3-margin-bottom">
+      <div class="w3-card staff">
+        <img src="nurse1.jpg" alt="Dentist" style="width:100%">
+        <div class="w3-container">
+          <h3 class="staff-name">Anne Frank</h3>
+          <p><button class="w3-button w3-light-grey w3-block"></i> HEAD DENTIST</button></p>
+        </div>
+      </div>
+    </div>
+<!-- Promo Section "Statistics" -->
+<div class="w3-container w3-row w3-center w3-dark-grey w3-padding-64">
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">120+</span>
+    <br>Partners
+  </div>
+
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">50+</span>
+    <br>Branches
+  </div>
+
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">180</span>
+    <br>Happy Clients
+  </div>
+
+  <div class="w3-quarter">
+    <span class="w3-xxlarge">170+</span>
+    <br>Happy Clients
+  </div>
+</div>
+
+<!-- Work Section -->
+<div class="w3-container" style="padding:128px 16px" id="work">
+  <h3 class="w3-center">OUR WORK</h3>
+  <p class="w3-center w3-large">What we've done for people</p>
+
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-col l3 m6">
+      <img src="teeth1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A microphone">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="teeth2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A phone">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="teeth3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A drone">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="teeth4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Soundbox">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-section">
+    <div class="w3-col l3 m6">
+      <img src="teeth5.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tablet">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="teeth6.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A camera">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="teeth7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A typewriter">
+    </div>
+    <div class="w3-col l3 m6">
+      <img src="teeth8.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="A tableturner">
+    </div>
+  </div>
+</div>
+
+<!-- Modal for full size images on click-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-xxlarge w3-black w3-padding-large w3-display-topright" title="Close Modal Image">×</span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+
+<!-- Our Services Section -->
+<div class="w3-container w3-center w3-dark-grey" style="padding:128px 16px" id="pricing">
+  <h3> OUR SERVICES</h3>
+  <p class="w3-large">What we can offer to our patients </p>
+  <div class="w3-row-padding" style="margin-top:64px">
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">COSMETIC DENTISTRY</li>
+        <li class="w3-padding-16">Cosmetic Teeth Whitening</li>
+        <li class="w3-padding-16">Cosmetic Dental Veneers</li>
+        <li class="w3-padding-16">Cosmetic Dental Implants</li>
+        <li class="w3-padding-16">Cosmetic Dental Crowns</li>
+        <li class="w3-padding-16">Cosmetic Tooth Bonding ( Braces )</li>
+        <li class="w3-padding-16">Cosmetic Tooth Contouring</li>
+        <li class="w3-padding-16">Cosmetic Orthodontic Treatment</li>
+        </li>
+      </ul>
+    </div>
+    <div class="w3-third">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-red w3-xlarge w3-padding-48">DENTAL INPLANTS</li>
+        <li class="w3-padding-16">Single Tooth Implant</li>
+        <li class="w3-padding-16">Implant Supported Bridge</li>
+        <li class="w3-padding-16">All on 4 dental Implants</li>
+        <li class="w3-padding-16">3 on 6 dental Implants</li>
+        <li class="w3-padding-16">
+        </li>
+      </ul>
+    </div>
+    <div class="w3-third w3-section">
+      <ul class="w3-ul w3-white w3-hover-shadow">
+        <li class="w3-black w3-xlarge w3-padding-32">DENTURES</li>
+        <li class="w3-padding-16">Complete demtures</li>
+        <li class="w3-padding-16">Fixed Partial Dentures</li>
+        <li class="w3-padding-16">Removable Partial Dentures</li>
+        <li class="w3-padding-16">Implant retained Dentures</li>
+        <li class="w3-padding-16">
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+
+<!-- Contact Section -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px" id="contact">
+  <h3 class="w3-center">CONTACT US!</h3>
+  <p class="w3-center w3-large">Lets get in touch. Send us a message and book an appointment. </p>
+  <div style="margin-top:48px">
+    <p><i class="fa fa-map-marker fa-fw w3-xxlarge w3-margin-right"></i> Novaliches Quezon City</p>
+    <p><i class="fa fa-phone fa-fw w3-xxlarge w3-margin-right"></i> Phone: +631234567890</p>
+    <p><i class="fa fa-envelope fa-fw w3-xxlarge w3-margin-right"> </i> Email: ACdentalcaresolutions@gmail.com</p>
+    <br>
+    <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-border" type="text" placeholder="Name" required name="Name"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Email" required name="Email"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Subject" required name="Subject"></p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Message" required name="Message"></p>
+      <p>
+        <button class="w3-button w3-black" type="submit">
+          <i class="fa fa-paper-plane"></i> BOOK AN APPOINTMENT
+        </button>
+      </p>
+    </form>
+
+<!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+<footer class="w3-center w3-black w3-padding-64">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>To the top</a>
+  <div class="w3-xlarge w3-section">
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+  </div>
+ 
+<script>
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+
+// Toggle between showing and hiding the sidebar when clicking the menu icon
+var mySidebar = document.getElementById("mySidebar");
+
+function w3_open() {
+  if (mySidebar.style.display === 'block') {
+    mySidebar.style.display = 'none';
+  } else {
+    mySidebar.style.display = 'block';
+  }
+}
+
+// Close the sidebar with the close button
+function w3_close() {
+    mySidebar.style.display = "none";
+}
+</script>
+
+</body>
+</html>
+ 
